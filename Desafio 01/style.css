@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brad-color:#E07B67;
+    --brad-color1:#b95a46;
+    --dark-10:#121214;
+    --dark-20: #17171A;
+    --dark-30: #202024;
+    --dark-40:#252529;
+    --dark-50:#AFABB6;
+    --dark-60:#FFFFFF;
+    --dark-70:#eee9e9;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--dark-20);
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+}
+.nav-bar{
+background-color: var(--dark-30);
+padding: 30px; 
+}
+.logo{
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+ h1{
+    color: var(--brad-color);
+}
+h1 span{
+    color: var(--dark-60);
+}
+    
+input{
+    background-color: var(--dark-40);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+    color: var(--dark-60);
+}
+.container{
+    position: relative;
+    margin: 30px 0; 
+    padding: 30px;
+    border: 1px solid var(--dark-40);
+    border-radius: 10px;
+    
+   
+}
+.container:hover{
+    position: relative;
+    cursor: pointer;
+     border: 1px solid var(--brad-color);
+      filter: drop-shadow(0 0 4px rgba(240, 143, 143, 0.5));
+       
+}
+.date{
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: var(--brad-color);
+}
+.title{
+    color: var(--dark-60);
+    padding-bottom: 5px;
+    font-size: 15px;
+    
+}
+.conteudo{
+    color: var(--dark-50);
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heart:hover {
+
+   animation: transitionLike 1s ease-in-out;
+}
+@keyframes transitionLike {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.buttonMode{
+  background-color: transparent;
+  border: none;
+}
+.onesection{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.LightMode{
+  background-color: var(--dark-60);
+  span{
+    color: var(--dark-40);
+  }
+  .nav-bar{
+    background-color: var(--dark-70);
+  }
+  input{
+    color: var(--dark-20);
+    background-color: var(--dark-60);
+    border: 2px solid var(--brad-color);
+  }
+  .container{
+    border: 1px solid var(--brad-color);
+  }
+  .container:hover{
+    filter: drop-shadow(0 0 4px rgba(250, 149, 149, 0.5));
+  }
+  .title, .date{
+    color: var(--brad-color1);
+  }
+  .conteudo{
+    color: var(--dark-40);
+  }
+}

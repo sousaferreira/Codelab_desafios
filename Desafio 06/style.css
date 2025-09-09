@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --brand-color: #8d1b3d;
+  
+  --dark-10: #0e131e;
+  --dark-20: #3c3939;
+  --white-10: #f4f4f4;
+  --white-20: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  
+}
+.nav-item{
+  text-decoration: none;
+  color: var(--dark-20);
+}
+.assistir, .inicio{
+  color: #8d1b3d;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.nav-bar{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+a{
+  text-decoration: none;
+  color: var(--dark-20);
+}
+a:hover{
+  color: var(--brand-color);
+}
+.carrossel{
+  display: none;
+}
+.carousel-item{
+  display: flex;
+  justify-content: center;
+  margin-left: 85px;
+}
+.mobile-menu-icon{
+  display: none;
+}
+.mobile-menu{
+  display: none;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.carousel-item{
+  display: flex;
+  justify-content: center;
+}
+
+.container-content_logo{
+  width: 100%;
+  background: linear-gradient(rgba(141, 27, 61, 0.6), rgba(141, 27, 61, 0.6)),url('./image/wallpaper.png');
+  
+}
+.logo_qatar{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+ padding: 50px 0;
+}
+.content-cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+.card-grupo{
+  background-color: var(--white-10);
+  
+
+}
+.class-grup{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+   margin: 10px 0 20px 20px;
+
+}
+.content_grupos-header, h1{
+  display: flex;
+  justify-content: center;
+  margin: 45px 0 25px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-grupo, .ul-times{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 290px;
+  padding-bottom: 10px;
+  
+}
+li{
+ 
+  display: flex;
+  
+  gap: 30px;
+  justify-content: center;
+}
+.p-times{
+ 
+ width: 100px;
+}
+.arrows{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  
+}
+.left{
+  transform: rotate(180deg);
+  background-color: var(--white-10);
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+.right{
+  background-color: var(--white-10);
+  border: none;
+   padding: 10px;
+  border-radius: 50px;
+}
+
+.next-game{
+ 
+  padding: 30px 230px;
+}
+.games-next{
+  background-color: var(--white-10);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 280px;
+ 
+
+}
+.games-h2{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.horario{
+  color: var(--brand-color);
+}
+.team{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.container-video_vivo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 10px;
+}
+.placar {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  
+  color: var(--brand-color);
+}
+.video-content{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  height: 300px;
+}
+.video.img{
+  position: relative;
+
+}
+.youtube-img{
+  position: absolute;
+  display: flex;
+  margin: 100px;
+
+}
+.comentarios-container{
+ display: flex;
+ justify-content: center;
+ margin: 0 60px;
+  
+}
+.comentarios-container_header{
+  
+}
+.container-all-coments{
+  
+  width: 500px;
+}
+.coment-h2{
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.coment-p{
+  padding-bottom: 30px;
+  font-size: 15px;
+  color: var(--dark-20);
+}
+.coment{
+  border: 2px solid var(--white-10);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.coment-header{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid var(--white-10);
+}
+.coment-h3{
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 10px;
+}
+.coment-body{
+  padding: 10px;
+}
+.coment-para{
+  font-size: 15px;
+  padding-bottom: 10px;
+
+}
+.coment-brasil{
+  color: var(--brand-color);
+  font-size: 12px;
+}
+.perfil{
+  border-radius: 50%;
+}
+span{
+  color: var(--brand-color);
+}
+.games-header{
+  display: flex;
+  justify-content: center;
+ 
+}
+.h2-games{
+  margin: 20px 0 20px 0;
+  font-weight: normal;
+}
+.next-games{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-left: 15%;
+  width:900px;
+  gap: 150px;
+}
+.all-games{
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: 30px 0 30px 50px;
+ 
+}
+.p-games{
+  color: var(--brand-color);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+@media screen and (max-width:1080px){
+
+ .next-game{
+ 
+  padding: 40px 50px;
+}
+.games-next{
+  background-color: var(--white-10);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+}
+
+
+@media screen and (max-width:560px){
+.nav-bar {
+        display: flex;
+        padding: 25px;
+        align-items: center;
+    }
+    .nav-item {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+        padding-right: 40px;
+       
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--brand-color);
+        font-size: 25px;
+        transform: rotate(90deg);
+    }
+    .mobile-menu ul {
+      
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding: 3px 40px 3px 60px;
+    }
+    .mobile-menu .nav-item {
+        display: flex;
+        justify-content:flex-end;
+        text-align: center;
+    }
+  
+    .open {
+        display: block;
+    }
+    .container{
+        min-width: 480;
+    }
+    .team-img{
+      display: none;
+    }
+     .next-game{
+ 
+  padding: 50px 30px;
+}
+.carrossel{
+  display: block;
+}
+.grupo2 , .grupo1, .grupo3{
+  display: none;
+}
+.arrows1{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.left1, .right1{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #8d1b3d;
+}
+.games-next{
+  
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  
+}
+.video-img{
+  height: auto;
+  padding: 30px;
+}
+
+
+}
+@media screen and (max-width:300px){
+
+   .container{
+        min-width: 280;
+    }
+    
+     .next-game{
+ 
+  padding: 30px 30px;
+}
+.games-next{
+  
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  
+}
+.video-img{
+  height: auto;
+  padding: 0 30px 0 80px;
+}
+
+  .games-next{
+  
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  
+}
+.video-img{
+  height: 300px;
+  padding: 80px;
+}
+
+.next-game{
+ display: none;
+}
+}
+
